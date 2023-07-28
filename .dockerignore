@@ -1,0 +1,5 @@
+Dockerfile
+Dockerfile.dev
+init.sh
+docker-compose.yaml
+**/__pycache__
