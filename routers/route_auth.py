@@ -12,7 +12,7 @@ auth = AuthJwtCsrf()
 
 @router.get("/api/csrftoken", response_model=Csrf)
 def get_csrf_token(csrf_protect: CsrfProtect = Depends()):
-    csrf_token = csrf_protect.generate_csrf()
+    csrf_token, _ = csrf_protect.generate_csrf_tokens()
     res = {"csrf_token": csrf_token}
     return res
 
