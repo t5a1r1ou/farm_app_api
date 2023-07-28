@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "farm-app"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "farm_app"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.100.0"
+uvicorn = {extras = ["standard"], version = "^0.23.1"}
+fastapi-csrf-protect = "^0.3.1"
+motor = "^3.2.0"
+pyjwt = "^2.8.0"
+passlib = "^1.7.4"
+python-decouple = "^3.8"
+dnspython = "^2.4.1"
+gunicorn = "^21.2.0"
+bcrypt = "^4.0.1"
+asyncio = "^3.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
