@@ -147,19 +147,22 @@ all = ["email-validator (>=2.0.0)", "httpx (>=0.23.0)", "itsdangerous (>=1.1.0)"
 
 [[package]]
 name = "fastapi-csrf-protect"
-version = "0.3.1"
-description = "Stateless implementation of Cross-Site Request Forgery (XSRF) Protection by using Double Submit Cookie mitigation pattern"
+version = "0.2.1"
+description = "Simple integration of Cross-Site Request Forgery (XSRF) Protection by using either Cookies or Context combined with Headers"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = ">=3.6.1,<4.0.0"
 files = [
-    {file = "fastapi-csrf-protect-0.3.1.tar.gz", hash = "sha256:07b7abf3186bfb8d1e43b4fd489f063bc15b757c71ba87be3dfe786e75028cb4"},
-    {file = "fastapi_csrf_protect-0.3.1-py3-none-any.whl", hash = "sha256:6160245061915e1da75fa98e04073af3502d3b8835a58a12e86236ed4441e778"},
+    {file = "fastapi-csrf-protect-0.2.1.tar.gz", hash = "sha256:48d1dd9d323a6e2449f0baf6d7b78a12661bc89ec3e3a8b929629b36f866ce88"},
+    {file = "fastapi_csrf_protect-0.2.1-py3-none-any.whl", hash = "sha256:4ac1680b7dc8cc399df32dde653d4d1ffd92bec25f2ce4c4bdd881f16b32edcf"},
 ]
 
 [package.dependencies]
 fastapi = ">=0,<1"
 itsdangerous = ">=2.0.1,<3.0.0"
 pydantic = ">=1.7.2,<2.0.0"
+
+[package.extras]
+examples = ["Jinja2[examples] (>=3.0.1,<4.0.0)", "uvicorn[examples] (>=0.15.0,<0.16.0)"]
 
 [[package]]
 name = "gunicorn"
@@ -775,4 +778,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "aea7603bfda65cb30137da41b3d626f653d678e37c5921166dfc454d8371f5f4"
+content-hash = "7148c30217100fafb6ae654a07f5cb83fb2d07553ca2e7aa1e7bedfa34e14e3a"
